@@ -22,7 +22,7 @@
                                 <i class="fas fa-minus-circle" class = "collapse-button"></i>
                             </span>
                     </div>
-                    <div class = "window-body">
+                    <div class = "window-body" id = "salary-window-body">
                           <input type="text" placeholder="Company" id = "company">
                           <input type="text" placeholder="Salary" id = "salary">      
                           <button type= "submit" id = "addSalary">Add</button>    
@@ -36,21 +36,27 @@
                                 </span>
                         </div>
                         <div class = "window-body">
-                            <input type="text">      
-                            <button>Add Bill</button>            
+                            <input type="text" placeholder="Name" id = "billName">
+                            <input type="text" placeholder="Method" id = "billMethod">
+                            <input type="text" placeholder="Amount" id = "billAmount"> 
+                            <input type="text" placeholder="Due Date" id = "billDueDate">        
+                            <button type= "submit" id = "addBill">Add</button>          
                         </div>
                     </div>
 
                 <div class = "input-box">
                         <div class= "window-header">
-                                <span class = "header-text">Credit</span>
+                                <span class = "header-text">Debt</span>
                                 <span class= "window-collapse-button">
                                     <i class="fas fa-minus-circle" class = "collapse-button"></i>
                                 </span>
                         </div>
                         <div class = "window-body">
-                            <input type="text">      
-                            <button>Add Credit</button>              
+                            <input type="text" placeholder="Account" id = "debtAccount">
+                            <input type="text" placeholder="Monthly Payment" id = "debtPayment">
+                            <input type="text" placeholder="Due Date" id = "debtDue">    
+                            <input type="text" placeholder = "Balance" id= "debtBalance">  
+                            <button type = "submit" id = "addDebt">Add Debt</button>              
                         </div>
                 </div>
 
@@ -62,15 +68,46 @@
                                 </span>
                         </div>
                         <div class = "window-body">
-                            <input type="text">      
-                            <button>Add Credit Line</button>                 
+                            <input type="text" placeholder="Account" id = "creditAccount">
+                            <input type="text" placeholder="Credit Line" id = "creditLine">      
+                            <button type = "submit" id = "addCredit">Add Credit Line</button>                 
                         </div>
                 </div>
             </div>
 
             <div class = right-container>
                 <div class = "dashboard">
-    
+                    <div class = "dashboard-header">Dashboard</div>
+                    <div class = dashboard-container>
+                        <div class = "snapshot">
+                            <h4>Monthly Snapshot</h1>
+                            <div>
+                                <section>Income</section>
+                                <section id = "income-snapshot-display" value = 0></section>
+                            </div>
+                            <div>
+                                <section>Bill Payments</section>
+                                <section id = "bill-snapshot-display"></section>
+                            </div>
+                            <div>
+                                <section>Debt Payments</section>
+                                <section id = "debt-snapshot-display"></section>
+                            </div>
+                            <div>
+                                <section>Monthly Needs</section>
+                                <section id = "needs-snapshot-display"></section>
+                            </div>
+                            <div>
+                                <section>Savings Plans</section>
+                                <section id = "savings-snapshot-display"></section>
+                            </div>
+                            <div>
+                                <section>Net</section>
+                                <section id = "net-snapshot-display"></section>
+                            </div>
+                        </div>
+                        <div class  = "credit-snapshot"></div>
+                    </div>
                 </div>
                 
                 <div class = "widget-container">

@@ -17,32 +17,13 @@
     display: flex;
 }
 
+/**** Left Containers ****/
+
 .left-container
 {
     display: flex;
     flex-direction: column;
     width: 25%;
-}
-
-.right-container
-{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-}
-
-.dashboard
-{
-    border: 1px solid black;
-    height: 50%;
-    margin: 40px 30px;
-}
-
-.widget-container
-{
-    border: 1px solid black;
-    height: 50%;
-    margin: 40px 30px;
 }
 
 /**** Salary Component ****/
@@ -88,6 +69,11 @@
     margin-bottom: 40px;
 }
 
+.company
+{
+    border: 1px solid black; 
+}
+
 .window-collapse-button
 {
     display: inline-block;
@@ -97,4 +83,52 @@
 {
     margin-bottom: 5px;
 }
+
+
+/**** Right Containers ****/
+
+.right-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.dashboard
+{
+    border: 1px solid black;
+    height: 50%;
+    margin: 40px 30px;
+}
+
+.dashboard-header
+{
+    background-color: #3E5696;
+    color: white
+}
+
+.dashboard-container
+{
+    display: flex;
+    height: 100%;
+}
+
+.snapshot
+{
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+div > section
+{
+    display: inline-block;
+}
+
+.widget-container
+{
+    border: 1px solid black;
+    height: 50%;
+    margin: 40px 30px;
+}
+
 
