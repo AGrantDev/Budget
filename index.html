@@ -14,49 +14,58 @@
 
         <div class= "main-container">
 
-            <div class = "input-bar-container">
-                <div id= "window-header-salary">
-                        <span class = "header-text">Salary</span>
-                        <span class= "window-collapse-button">
-                            <i class="fas fa-minus-circle" class = "collapse-button"></i>
-                        </span>
-                    </div>
-                    <div class = "window-body">
-                            
-                    </div>
-                
-                
-                    <div class= "window-header">
-                            <span class = "header-text">Bills</span>
+            <div class = "left-container">
+                <div class = "input-box">
+                    <div id= "window-header-salary">
+                            <span class = "header-text">Salary</span>
                             <span class= "window-collapse-button">
                                 <i class="fas fa-minus-circle" class = "collapse-button"></i>
                             </span>
                     </div>
                     <div class = "window-body">
-                
+                          <input type="text" placeholder="Company" id = "company">
+                          <input type="text" placeholder="Salary" id = "salary">      
+                          <button type= "submit" id = "addSalary">Add</button>    
                     </div>
-                    
-                
-                    <div class= "window-header">
-                            <span class = "header-text">Credit</span>
-                            <span class= "window-collapse-button">
-                                <i class="fas fa-minus-circle" class = "collapse-button"></i>
-                            </span>
+                </div>
+                <div class = "input-box">
+                        <div class= "window-header">
+                                <span class = "header-text">Bills</span>
+                                <span class= "window-collapse-button">
+                                    <i class="fas fa-minus-circle" class = "collapse-button"></i>
+                                </span>
+                        </div>
+                        <div class = "window-body">
+                            <input type="text">      
+                            <button>Add Bill</button>            
+                        </div>
                     </div>
-                    <div class = "window-body">
-                
-                    </div>
-                  
-               
-                    <div class= "window-header">
-                            <span class = "header-text">Open Credit</span>
-                            <span class= "window-collapse-button">
-                                <i class="fas fa-minus-circle" class = "collapse-button"></i>
-                            </span>
-                    </div>
-                    <div class = "window-body">
-                
-                    </div>    
+
+                <div class = "input-box">
+                        <div class= "window-header">
+                                <span class = "header-text">Credit</span>
+                                <span class= "window-collapse-button">
+                                    <i class="fas fa-minus-circle" class = "collapse-button"></i>
+                                </span>
+                        </div>
+                        <div class = "window-body">
+                            <input type="text">      
+                            <button>Add Credit</button>              
+                        </div>
+                </div>
+
+                <div class = "input-box">
+                        <div class= "window-header">
+                                <span class = "header-text">Open Credit</span>
+                                <span class= "window-collapse-button">
+                                    <i class="fas fa-minus-circle" class = "collapse-button"></i>
+                                </span>
+                        </div>
+                        <div class = "window-body">
+                            <input type="text">      
+                            <button>Add Credit Line</button>                 
+                        </div>
+                </div>
             </div>
 
             <div class = right-container>

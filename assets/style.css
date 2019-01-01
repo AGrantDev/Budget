@@ -5,7 +5,6 @@
 .header-bar
 {
     background-color: #E5E5E5;
-    height: 100px;
     font-size: 50px;
     font-weight: bold;
     padding-left: 16px;
@@ -15,14 +14,21 @@
 
 .main-container
 {
-    border: 1px solid black;
     display: flex;
-    flex: 1;
 }
 
-.input-bar-container
+.left-container
 {
+    display: flex;
+    flex-direction: column;
     width: 25%;
+}
+
+.right-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
 }
 
 .dashboard
@@ -37,13 +43,6 @@
     border: 1px solid black;
     height: 50%;
     margin: 40px 30px;
-}
-
-.right-container
-{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
 }
 
 /**** Salary Component ****/
