@@ -40,24 +40,19 @@ let creditButton = document.getElementById("addCredit");
 let button = document.getElementsByClassName("window-collapse-button");
 let windowBody = document.getElementsByClassName("window-body");
 
-function renderSalary(){
+function addCompany(){
+    let company = document.getElementById("company").value;
+    companyArray.push(company);
+    let testDiv = document.createElement('div');
     for(let i = 0; i < salaryArray.length; i++){
-        let testDiv = document.createElement('div');
         const newDiv = `
             <div>${companyArray[i]}</div>
             <div>${salaryArray[i]}</div>
         `
-        let salaryWindow = document.getElementById("salary-window-body");
+        let salaryWindow = document.getElementById("salary-content");
         testDiv.innerHTML = newDiv;
         salaryWindow.appendChild(testDiv);
     }
-}
-
-function addCompany(){
-    let company = document.getElementById("company").value;
-    let salaryWindow = document.getElementById("salary-window-body");
-    companyArray.push(company);
-    renderSalary();
 }
 
 function addSalary(){
