@@ -1,4 +1,4 @@
-//Input logic
+//Classes
 class Bill {
     constructor(name,method,amount,due,paid){
         this.name = name;
@@ -25,7 +25,7 @@ class Credit {
     }
 }
 
-
+//Declarations
 let salaryArray = [];
 let companyArray = [];
 let billArray = [];
@@ -40,6 +40,7 @@ let creditButton = document.getElementById("addCredit");
 let button = document.getElementsByClassName("window-collapse-button");
 let windowBody = document.getElementsByClassName("window-body");
 
+//Will append both company and salary information
 function addCompany(){
     let company = document.getElementById("company").value;
     companyArray.push(company);
@@ -48,7 +49,7 @@ function addCompany(){
         const newDiv = `
             <div>${companyArray[i]}</div>
             <div>${salaryArray[i]}</div>
-        `
+        `;
         let salaryWindow = document.getElementById("salary-content");
         testDiv.innerHTML = newDiv;
         salaryWindow.appendChild(testDiv);
@@ -69,8 +70,17 @@ function addBill(){
     let billAmount = parseInt(billAmountString,10);
     let billDue = document.getElementById("billDueDate").value;
 
-    const bill = new Bill(billName,billMethod,billAmount,billDue,false);
-    billArray.push(bill);
+    const newBill = new Bill(billName,billMethod,billAmount,billDue,false);
+    billArray.push(newBill);
+    // let testDiv = document.createElement('div');
+    // for(let i = 0; i < billArray.length; i++){
+    //     const newDiv = `
+    //         <div>test</div>
+    //     `;
+    //     let billWindow = document.getElementById("bill-content");
+    //     testDiv.innerHTML = newDiv;
+    //     billWindow.appendChild(testDiv);
+    // }
 }
 
 function addDebt(){
@@ -115,7 +125,5 @@ function updateIncome(){
     {
         incomeTotal += salaryArray[i];
     }
-
     incomeTotalWindow.innerText = incomeTotal;
 }
-
